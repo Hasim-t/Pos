@@ -5,7 +5,6 @@ import 'package:posdelivery/service/login_service.dart';
 import 'package:posdelivery/view/screen/login_page.dart';
 import 'package:posdelivery/view/screen/students_detials_screen.dart';
 import 'package:posdelivery/widgets/appbar.dart';
-import 'package:posdelivery/widgets/bottomsheet.dart';
 import 'package:posdelivery/widgets/custom_textwidget.dart';
 import 'package:posdelivery/widgets/customtopbutton.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -38,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: const Color(0XFF1F1F1F),
       appBar: AppBar(
+         automaticallyImplyLeading: false,
         backgroundColor: Colors.transparent,
         title: Row(
           children: [
